@@ -7,9 +7,33 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo "Adam Robert-Mihai"
       - run: gcc src/main.c -o main
+      - name: Testu 1
       - run: |
           if [ "$(./main 1 2)" -eq "3" ]
           then
-               echo "da bos"
+               exit 0
+          fi
+      - name: Testu 2
+      - run: |
+          if [ "$(./main 5 10)" -eq "20" ]
+          then
+               exit 0
+          fi
+      - name: Testu 3
+      - run: |
+          if [ "$(./main 2 10)" -eq "20" ]
+          then
+               exit 0
+          fi
+      - name: Testu 4
+      - run: |
+          if [ "$(./main 47 17)" -eq "36" ]
+          then
+               exit 0
+          fi
+      - name: Testu 5
+      - run: |
+          if [ "$(./main 3 9)" -eq "9" ]
+          then
                exit 0
           fi
