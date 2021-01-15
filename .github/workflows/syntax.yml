@@ -6,4 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: echo "Adam Robert-Mihai"
-      - run: gcc src/main.c
+      - run: gcc src/main.c -o main
+      - run: |
+          if [ "$(./main 1 2)" = "3" ]
+          then
+               exit 1
+          fi
