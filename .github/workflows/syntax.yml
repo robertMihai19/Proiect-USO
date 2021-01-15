@@ -10,6 +10,6 @@ jobs:
       - run: |
           if [ "$(./main 1 2)" -eq "3" ]
           then
-               echo "da bo$$"
+               echo "da bos"
                exit 1
           fi
