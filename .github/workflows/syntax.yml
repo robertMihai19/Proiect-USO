@@ -8,7 +8,7 @@ jobs:
       - run: echo "Adam Robert-Mihai"
       - run: gcc src/main.c -o main
       - run: |
-          if [ "$(./main 1 2)" = "3" ]
+          if [ "$(./main 1 2)" -eq "3" ]
           then
                exit 1
           fi
