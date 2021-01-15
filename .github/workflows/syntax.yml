@@ -17,7 +17,7 @@ jobs:
           fi
       - name: Test 2
         run: |
-          if [ "$(./main 5 10)" -eq "20" ]
+          if [ "$(./main 5 10)" -eq "15" ]
           then
                exit 0
           else 
