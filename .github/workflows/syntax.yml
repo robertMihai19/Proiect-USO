@@ -1,4 +1,4 @@
-name syntax
+name: syntax
 on: push
 jobs:
     linux:
